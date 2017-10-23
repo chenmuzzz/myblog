@@ -167,7 +167,6 @@
                       <input name="cate_id" type="radio" value="1" checked>
                       这是栏目 <em class="hidden-md">( 栏目ID: <span>1</span> )</em></label>
                   </li>
-                 
                 </ul>
               </div>
             </div>

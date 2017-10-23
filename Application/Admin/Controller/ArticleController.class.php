@@ -54,7 +54,7 @@ class ArticleController extends AdminController{
 	    $obj=D('Article');
 	    if(IS_POST){
 	        $data=I('post.');
-			
+
 	        $data['updated_time']=time();
             $res=$obj->update_one($data['article_id'],$data);
             if($res){
