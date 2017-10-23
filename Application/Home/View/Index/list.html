@@ -1,0 +1,36 @@
+
+
+    <div class="pure-u-1 pure-u-md-3-4">
+     <div class="content_container">
+      <div class="post">
+       <div class="post-archive" id="list_article">
+        <!--Use lodash to classify posts. See https://lodash.com/docs#groupBy-->
+        <if condition="!$article_list">
+          <h3>暂无该标签的数据</h3>
+         <else/>
+
+            <if condition="$cate_name">
+                <h3 style="margin-bottem:20px;color: grey">
+                    正在查看&nbsp;
+                    <span style="color: red;font-size: 25px;font-style: italic">{$cate_name}</span>&nbsp;
+                    下的标签列表</h3>
+            </if>
+
+        <foreach name="article_list" item="v" key="k">
+        <h2>{$k}</h2>
+        <ul class="listing">
+          <foreach name="v" item="vv">
+         <li class="article_info"><span class="date">{$vv.created_time|date='m-d',###}</span><a href="javascript:void(0);" title="{$vv.title}" data-url="{:U('index/article',array('id'=>$vv['id']))}">{$vv.title}</a></li>
+          </foreach>
+        </ul>
+        </foreach>
+         </if>
+       </div>
+      </div>
+     </div>
+    </div>
+<script>
+    $('.article_info>a').click(function(){
+        get_ajax_data($(this));
+    })
+</script>

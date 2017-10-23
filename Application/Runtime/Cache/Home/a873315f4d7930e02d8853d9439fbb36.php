@@ -1,0 +1,75 @@
+<?php if (!defined('THINK_PATH')) exit();?>
+<style>
+    .text{height:40px;max-width:330px;width:90%;border-radius: 15px;outline:none;
+        border:1px solid grey;
+    }
+    .div{margin-left:20%;margin-top:20px;width:100%;}
+    .textarea{max-width:328px;height:200px;border-radius: 15px;outline:none;resize: none;width:90%;word-break:break-all;}
+    .btn{border:none;background:#66F4DF;display:block;max-width:334px;width:90%;}
+    .cont{text-indent: 20px}
+</style>
+
+    <div class="pure-u-1 pure-u-md-3-4">
+     <div class="content_container">
+      <div class="post">
+
+       <div class="post-content">
+
+            <div class="div" style="margin-top:10px">
+                 <input type="text" placeholder="name" class="text cont" id="name">
+            </div>
+
+            <div class="div" >
+                 <input type="text" placeholder="email" class="text cont" id="email">
+            </div>
+
+            <div class="div">
+                 <textarea class="textarea cont" placeholder="您的留言将被推送至作者的邮箱.." id="content"></textarea>
+
+            </div >
+
+            <div class="div">
+                 <input type="button" value="提交" class="text btn" id="btn">
+            </div>
+
+        </div >
+
+       <!--<div class="post-nav">-->
+       <!--</div>-->
+
+      </div>
+     </div>
+    </div>
+
+    <!--<script src="./about/busuanzi.pure.mini.js" async=""></script>-->
+    <script>
+        $('.btn').click(function(){
+            reg=/\w{2,}@\w{2,}\.\w{2,}/;
+            email=$('#email').val();
+            if(!reg.test(email)){
+                alert('请填写正确的email格式,方便作者给您回复');
+                return false;
+            }
+            title = '博客留言';
+            content = $('#content').val();
+            name=$('#name').val();
+            content =content + '<br>'+'来自:'+name +"邮箱:"+email;
+            $.ajax({
+                type:'GET',
+                url:'<?php echo U("index/sendMail");?>',
+                data:{'title':title,'content':content,'name':name,'email':email},
+                dataType:'json',
+                success:function(msg){
+                    if(msg.code == 1){
+                        alert(msg.msg);
+                        //清空内容
+                        $('#email').val('');
+                        $('#content').val('');
+                        $('#name').val('');
+                    }else{
+                        alert(msg.msg);
+                    }
+                }
+            })
+        })
+    </script>

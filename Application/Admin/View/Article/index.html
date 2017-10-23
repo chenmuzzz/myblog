@@ -1,0 +1,131 @@
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-lg-10 col-md-offset-2 main" id="main">
+      <form action="/Article/checkAll" method="post" >
+        <h1 class="page-header">操作</h1>
+        <ol class="breadcrumb">
+          <li><a href="{:U('article/add_article')}">增加文章</a></li>
+        </ol>
+        <h1 class="page-header">管理 <span class="badge">7</span></h1>
+        <div class="table-responsive">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th><span class="glyphicon glyphicon-th-large"></span> <span class="visible-lg">选择</span></th>
+                <th><span class="glyphicon glyphicon-file"></span> <span class="visible-lg">标题</span></th>
+                <th><span class="glyphicon glyphicon-list"></span> <span class="visible-lg">栏目</span></th>
+                <th class="hidden-sm"><span class="glyphicon glyphicon-tag"></span> <span class="visible-lg">标签</span></th>
+                <th class="hidden-sm"><span class="glyphicon glyphicon-comment"></span> <span class="visible-lg">评论</span></th>
+                <th class="hidden-sm"><span class="glyphicon glyphicon-comment"></span> <span class="visible-lg">状态</span></th>
+                <th><span class="glyphicon glyphicon-time"></span> <span class="visible-lg">日期</span></th>
+                <th><span class="glyphicon glyphicon-pencil"></span> <span class="visible-lg">操作</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <foreach name='res' item='val'>
+              <tr>
+                <td><input type="checkbox" class="input-control" name="checkbox[]" value="" /></td>
+                <td class="article-title">{$val.title}</td>
+                <td>{$val.cate_name}</td>
+                <td class="hidden-sm">{$val.tags}</td>
+                <td class="hidden-sm">{$val.comment}</td>
+                <td class="hidden-sm">
+                    <a rel="{$val.id}" href="javascript:void(0);" class="display">
+                    <if condition="$val.display eq 1">公开<else/>隐藏</if>
+                    </a>
+                </td>
+                <td>{$val.updated_time|date="y-m-d",###}</td>
+                <td><a href="{:U('article/edit_article',array('id'=>$val['id']))}">修改</a> <a rel="{$val.id}" class="del">删除</a></td>
+              </tr>
+              </foreach>
+            </tbody>
+          </table>
+        </div>
+        <footer class="message_footer">
+          <nav>
+            <div class="btn-toolbar operation" role="toolbar">
+              <div class="btn-group" role="group"> <a class="btn btn-default" onClick="select()">全选</a> <a class="btn btn-default" onClick="reverse()">反选</a> <a class="btn btn-default" onClick="noselect()">不选</a> </div>
+              <div class="btn-group" role="group">
+                <button type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="删除全部选中" name="checkbox_delete">删除</button>
+              </div>
+            </div>
+            <ul class="pagination pagenav">
+              <li class="disabled"><a aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a> </li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a> </li>
+            </ul>
+          </nav>
+        </footer>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<script>
+//是否确认删除
+$(function(){   
+	$(".del").click(function(){
+	    _this=$(this);
+		var id = $(this).attr("rel"); //对应id
+			if(window.confirm("此操作不可逆，是否确认？"))
+			{
+				$.ajax({
+					type: "GET",
+					url: "{:U('article/del_article')}",
+					data:{'id':id},
+					cache: false, //不缓存此页面   
+					dataType:'json',
+                    success: function (msg) {
+						if(msg.code==1){
+                            _this.parents('tr').remove();
+                        }else{
+						    alert('删除失败');
+                        }
+					}
+				});
+			};
+
+	});
+
+    $(".display").click(function(){
+        _this=$(this);
+        var id = $(this).attr("rel"); //对应id
+        if($.trim($(this).text()) == '公开'){
+            var type='确认隐藏吗';
+            var flag=0;
+        }else{
+            var type='确认公开吗';
+            var flag=1;
+        }
+
+        if(window.confirm(type))
+        {
+            $.ajax({
+                type: "GET",
+                url: "{:U('article/change_status')}",
+                data:{'id':id,'flag':flag},
+                cache: false, //不缓存此页面
+                dataType:'json',
+                success: function (msg) {
+                    if(msg.code==1){
+                        if(flag==1){
+                            _this.text('公开');
+                        }else{
+                            _this.text('隐藏');
+                        }
+                    }else{
+                        alert('修改失败');
+                    }
+                }
+            });
+        };
+
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1102 @@
+[ 2017-10-23T19:21:37+08:00 ] 127.0.0.1 /oa/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: HTTP_VIA /phpstudy/www/oa/Application/Admin/Controller/IndexController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-10-23T19:21:41+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0001s ]
+SQL: select version() as ver [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: HTTP_VIA /phpstudy/www/oa/Application/Admin/Controller/IndexController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000332s ]
+
+[ 2017-10-23T19:21:45+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`cate_name` FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2017-10-23T19:21:52+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=cate&a=cate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cate` WHERE ( parent_id=0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006949s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000292s ]
+
+[ 2017-10-23T19:21:53+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`cate_name` FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2017-10-23T19:22:03+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`cate_name` FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-10-23T19:22:16+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2017-10-23T19:25:00+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:32:05+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:33:13+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0009s ]
+
+[ 2017-10-23T19:34:09+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:34:30+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [2] preg_match(): Unknown modifier '[' /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 29 行.
+
+[ 2017-10-23T19:34:46+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:34:59+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:35:28+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:36:06+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0011s ]
+
+[ 2017-10-23T19:36:34+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:37:45+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:37:59+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:38:10+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0005s ]
+
+[ 2017-10-23T19:38:37+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0003s ]
+
+[ 2017-10-23T19:38:50+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0002s ]
+
+[ 2017-10-23T19:39:13+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0003s ]
+
+[ 2017-10-23T19:39:24+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:39:31+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:39:46+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0005s ]
+
+[ 2017-10-23T19:40:00+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:40:08+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0003s ]
+
+[ 2017-10-23T19:40:42+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:41:23+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:41:35+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:41:45+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:42:12+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:44:52+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:46:45+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0002s ]
+
+[ 2017-10-23T19:46:54+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:47:03+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:47:13+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:47:31+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000236s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:48:20+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:48:50+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:49:19+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:49:27+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:49:44+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:54:27+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:54:34+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+
+[ 2017-10-23T19:55:58+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T19:56:30+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T19:56:33+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000232s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T19:57:42+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T19:58:06+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T19:58:58+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T19:59:14+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001703s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T19:59:29+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T19:59:39+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T20:02:24+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T20:02:33+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T20:03:05+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T20:03:17+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T20:05:28+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 32 行.
+
+[ 2017-10-23T20:06:29+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 33 行.
+
+[ 2017-10-23T20:06:40+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: img /phpstudy/www/oa/Application/Admin/Controller/ArticleController.class.php 第 33 行.
+
+[ 2017-10-23T20:34:16+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2017-10-23T20:34:18+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`cate_name` FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2017-10-23T20:34:20+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+
+[ 2017-10-23T20:39:26+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=add_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: INSERT INTO `article` (`title`,`keywords`,`description`,`cate_id`,`image`,`display`,`content`,`created_time`,`updated_time`) VALUES ('10-23 today','排版','尝试看看文章的图片排版','1','20171023/1508762183601770.jpg;20171023/1508762259505843.jpg','1','&lt;p style=&quot;text-indent: 2em; text-align: left;&quot;&gt;周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。&lt;img src=&quot;../oa/Upload/article_image/20171023/1508762183601770.jpg&quot; title=&quot;1508762183601770.jpg&quot; alt=&quot;25_214733_a6b5a6c1995bb44.jpg&quot; style=&quot;width: 318px; height: 360px; float: left;&quot; width=&quot;318&quot; height=&quot;360&quot;/&gt;11是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于&lt;img src=&quot;../oa/Upload/article_image/20171023/1508762259505843.jpg&quot; title=&quot;1508762259505843.jpg&quot; alt=&quot;201210160300008594424CA725156CF95D43FF7E31DFE7DC4.jpg&quot; style=&quot;width: 417px; height: 250px; float: right;&quot; width=&quot;417&quot; height=&quot;250&quot;/&gt;是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版&lt;/p&gt;','1508762366','1508762366') [ RunTime:0.0783s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000294s ]
+
+[ 2017-10-23T20:39:28+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`cate_name` FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2017-10-23T20:39:30+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`cate_name` FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2017-10-23T20:43:41+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`cate_name` FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2017-10-23T20:43:44+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=edit_article&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2017-10-23T20:43:46+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`cate_name` FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2017-10-23T20:43:50+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=edit_article&id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2017-10-23T20:45:08+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=edit_article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: UPDATE `article` SET `title`='10-23 today',`keywords`='排版',`description`='尝试看看文章的图片排版',`cate_id`='1',`image`='',`display`='1',`content`='&lt;p style=&quot;text-indent: 2em; text-align: center;&quot;&gt;周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。&lt;img src=&quot;../oa/Upload/article_image/20171023/1508762183601770.jpg&quot; title=&quot;1508762183601770.jpg&quot; alt=&quot;25_214733_a6b5a6c1995bb44.jpg&quot; style=&quot;width: 318px; height: 360px; float: left;&quot; width=&quot;318&quot; height=&quot;360&quot;/&gt;11是以下文章的排版。周一，当然是无 聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于&lt;img src=&quot;../oa/Upload/article_image/20171023/1508762259505843.jpg&quot; title=&quot;1508762259505843.jpg&quot; alt=&quot;201210160300008594424CA725156CF95D43FF7E31DFE7DC4.jpg&quot; style=&quot;width: 417px; height: 250px; float: right;&quot; width=&quot;417&quot; height=&quot;250&quot;/&gt;是以下文章的排版是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版是以下文章的排版。&amp;nbsp; 周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版。周一，当然是无聊的，写在各个文章的目的在于是以下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版下文章的排版&lt;/p&gt;',`updated_time`='1508762708' WHERE ( id=6 ) [ RunTime:0.0316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-10-23T20:45:10+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`cate_name` FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2017-10-23T20:50:21+08:00 ] 127.0.0.1 /oa/index.php?m=Admin&c=article&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`cate_name` FROM `cate`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+NOTIC: [8] Undefined index: comment /phpstudy/www/oa/Application/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000332s ]
+
