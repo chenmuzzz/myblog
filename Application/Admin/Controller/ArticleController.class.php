@@ -93,7 +93,12 @@ class ArticleController extends AdminController{
         }
         echo json_encode($d);
     }
-	public function upload(){
-		echo 1;die;
-	}
+	public function redis(){
+		$redis=new \Redis();
+		$redis->connect('127.0.0.1','6379');
+		$redis->set('a','hello world');
+		echo $redis->get('a');
+//	    s('a','helleo');
+//        echo S('a');
+    }
 }

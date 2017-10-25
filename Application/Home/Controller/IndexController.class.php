@@ -76,6 +76,10 @@ class IndexController extends HomeController {
     public function picture(){
         $this->display();
     }
+    public function status(){
+
+        $this->display();
+    }
     public function article_list(){
         $ajax=I('ajax');
         $cate_id=I('cate_id');
