@@ -20,6 +20,9 @@ class LifeController extends AdminController{
         $life=D('life');
         $data['content']=$content;
         $data['add_time']=time();
+
+        $data['year']=date('Y',time());
+        $data['month']=date('m',time());
         $res=$life->add_one($data);
         if($res){
             $this->life();

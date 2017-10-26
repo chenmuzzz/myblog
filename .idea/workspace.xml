@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88a78a61-bed2-4d59-bc21-a0a237ace184" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/LifeController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/LifeModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Life/life.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Model/LifeModel.class.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Application/Home/View/Index/status.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/life.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/ArticleController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ArticleController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Article/add_article.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Article/add_article.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Public/header.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Public/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Common/function.php" afterPath="$PROJECT_DIR$/Application/Common/Common/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Index/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xx.php" afterPath="$PROJECT_DIR$/xx.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/LifeController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/LifeController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Index/life.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/life.html" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,21 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LifeController.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LifeController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/LifeController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21403092">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="life.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="life.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/life.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.25">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.60642093">
+              <caret line="34" column="135" selection-start-line="34" selection-start-column="135" selection-end-line="34" selection-end-column="135" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#if#0;n#foreach#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#if#1;n#foreach#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -203,11 +193,11 @@
         <option value="$PROJECT_DIR$/Application/Admin/View/Article/add_article.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/LifeModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/Index/index.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/LifeController.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Model/LifeModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/View/Index/life.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/ThinkPHP/Library/Think/Page.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/LifeController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Index/life.html" />
       </list>
     </option>
   </component>
@@ -403,7 +393,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21979167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -796,19 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/life.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#if#0;n#foreach#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#if#1;n#foreach#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#foreach#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#foreach#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Think/Page.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4649227">
@@ -835,9 +812,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/LifeController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21403092">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/life.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60642093">
+          <caret line="34" column="135" selection-start-line="34" selection-start-column="135" selection-end-line="34" selection-end-column="135" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#if#0;n#foreach#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#if#1;n#foreach#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#foreach#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#foreach#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
