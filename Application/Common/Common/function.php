@@ -115,4 +115,9 @@ function my_get_browser(){
     }
 }
 
-//上传文件
+function dd($data){
+    echo '<pre>';
+    var_dump($data);
+    echo '</pre>';
+    die;
+}

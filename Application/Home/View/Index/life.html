@@ -1,0 +1,50 @@
+
+<style>
+   #my_status>.b_d {width:100%;min-height: 100px;border:1px solid #c1c1c1;font-size: 16px;max-width: 708px;margin-bottom: 10px}
+</style>
+    <div class="pure-u-1 pure-u-md-3-4">
+     <div class="content_container">
+      <div class="post">
+       <div class="post-archive" id="my_status">
+        <!--Use lodash to classify posts. See https://lodash.com/docs#groupBy-->
+
+           <!--<div>-->
+               <!--<div>记录下今天的心情？</div>-->
+               <!--<div>-->
+                   <!--你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好-->
+               <!--</div>-->
+           <!--</div>-->
+
+        <foreach name="res"  key="k" item="v">
+            <if condition="$k eq 0 or $v.year neq $res[$k-1]['year']">
+                <span style="color: red;font-size: 19px">{$v.year}</span>
+
+            </if>
+            <if condition="$k eq 0 or $v.month neq $res[$k-1]['month'] or $v.year neq $res[$k-1]['year']">
+                <span style="color:#00a0e9;font-size: 13px">{$v.month}月</span>
+
+            </if>
+
+           <div class="b_d">
+               <div style="margin:10px;">
+               <div><span style="font-size: 12px">{$v.time}</span></div>
+                    <span>{$v.content}</span>
+                    <!--<img src="../oa/Upload/article_image/20171023/1508762183601770.jpg" style="max-width:350px;max-height: 222px;">-->
+                    <!--<img src="../oa/Upload/article_image/20171023/1508762183601770.jpg" style="max-width:350px;max-height: 222px;">-->
+                    <!--<img src="../oa/Upload/article_image/20171023/1508762183601770.jpg" style="max-width:350px;max-height: 222px;">-->
+                </div>
+
+           </div>
+        </foreach>
+            {$page}
+
+         </if>
+       </div>
+      </div>
+     </div>
+    </div>
+<script>
+    $('.article_info>a').click(function(){
+        get_ajax_data($(this));
+    })
+</script>

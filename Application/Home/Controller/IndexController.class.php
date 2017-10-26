@@ -76,8 +76,17 @@ class IndexController extends HomeController {
     public function picture(){
         $this->display();
     }
-    public function status(){
+    public function life(){
+        $res=D('life')->get_all();
+        foreach($res as $k=>$v){
+            $res[$k]['time']=date('m-d H:i',$v['add_time']);
+        }
 
+        $page=D('life')->page();
+        $show=$page->show();
+
+        $this->assign('page',$show);
+        $this->assign('res',$res);
         $this->display();
     }
     public function article_list(){

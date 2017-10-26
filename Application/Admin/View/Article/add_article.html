@@ -67,6 +67,11 @@
               <div class="add-article-box-footer">
                 <button class="btn btn-primary" type="submit" >发布</button>
               </div>
+
+                <div class="add-article-box-footer">
+                    <button class="btn btn-primary" type="button" id="life" >当短状态发布</button>
+                </div>
+
             </div>
           </div>
         </form>
@@ -117,6 +122,10 @@ function upFiles() {
     var myFiles = _uploadEditor.getDialog("attachment");
     myFiles.open();
 }
+    $('#life').click(function(){
+        var content=editor.getPlainTxt();
+        window.location.href='index.php/admin/life/add_life/content/'+content;
+    })
 </script>
 </body>
 </html>
