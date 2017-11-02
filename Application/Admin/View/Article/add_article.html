@@ -123,8 +123,21 @@ function upFiles() {
     myFiles.open();
 }
     $('#life').click(function(){
-        var content=editor.getPlainTxt();
-        window.location.href='index.php/admin/life/add_life/content/'+content;
+        var content=editor.getContent();
+        $.ajax({
+            type:'POST',
+            url:'index.php/admin/life/add_life',
+            data:{'content':content},
+            dataType:'json',
+            success:function(msg){
+                if(msg == 'ok'){
+                    alert('添加成功');
+                }else{
+                    alert('something wrong');
+                }
+
+            }
+        })
     })
 </script>
 </body>

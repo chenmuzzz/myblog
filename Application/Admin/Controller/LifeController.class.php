@@ -16,7 +16,7 @@ class LifeController extends AdminController{
         $this->display('life');
     }
     public function add_life(){
-        $content=I('content');
+        $content=$_POST['content'];
         $life=D('life');
         $data['content']=$content;
         $data['add_time']=time();
@@ -25,7 +25,7 @@ class LifeController extends AdminController{
         $data['month']=date('m',time());
         $res=$life->add_one($data);
         if($res){
-            $this->life();
+            echo json_encode('ok');
         }
     }
 }

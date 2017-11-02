@@ -1,6 +1,7 @@
 
 <style>
-   #my_status>.b_d {width:95%;min-height: 100px;border:1px solid #c1c1c1;font-size: 16px;max-width: 708px;margin: 10px auto;background: #e1f1f1}
+   #my_status>.b_d {width:95%;min-height: 100px;border:1px solid #c1c1c1;font-size: 16px;max-width: 708px;margin: 10px auto;background: #eee}
+   /*.b_d img{text-align: left !important;}*/
     /*#my_status{background: lightgrey  }*/
     /*.content_container{background: lightgrey}*/
 </style>
@@ -30,12 +31,8 @@
            <div class="b_d">
                <div style="margin:10px;">
                <div><span style="font-size: 12px">{$v.time}</span></div>
-                    <div style="margin-bottom: 20px">{$v.content}</div>
-                    <!--<img src="../oa/Upload/article_image/20171023/1508762183601770.jpg" style="max-width:210px;max-height: 150px;">-->
-                    <!--<img src="../oa/Upload/article_image/20171023/1508762183601770.jpg" style="max-width:210px;max-height: 150px;">-->
-                    <img src="../oa/Upload/article_image/20171023/1508762183601770.jpg" style="max-width:210px;max-height: 150px;">
-                   <!--<img src="../oa/Upload/article_image/20171023/1508762183601770.jpg" style="max-width:210px;max-height: 150px;">-->
-                   <!--<img src="../oa/Upload/article_image/20171023/1508762183601770.jpg" style="max-width:210px;max-height: 150px;">-->
+                    <div class='post-content' style="line-height: 1.2">{$v.content}</div>
+                    <!--<img src="/Upload/article_image/20171023/1508762183601770.jpg" style="max-width:210px;max-height: 150px;">-->
 
                </div>
 

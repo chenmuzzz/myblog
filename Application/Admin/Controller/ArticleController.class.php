@@ -25,7 +25,6 @@ class ArticleController extends AdminController{
 	public function add_article(){
 		if(IS_POST){
 			$data=I('post.');
-			dd($data);
 			preg_match_all("/[0-9]{8}\/[0-9]{10,}\.(jpg|png|jpeg)/",$data['content'],$img_arr);
 //			preg_match("/article_image\/[0-9]{8}\/[0-9]{10,}\.(jpg|png|jpeg)$/",'article_image/20171023/1508757741352353.jpg',$img_arr);
 			if($img_arr != array() && $img_arr[0]!= array()){
