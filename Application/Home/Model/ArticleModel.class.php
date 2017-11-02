@@ -7,10 +7,16 @@
  */
 namespace Home\Model;
 class ArticleModel extends \Think\Model{
-    public function getAll($where=array()){
-        $page=$this->page();
-        $res=$this->where($where)->order('id desc')->limit($page->firstRow.','.$page->listRows)->select();
+    public function getAll($where=array(),$start=array(),$limit=array()){
+//        $page=$this->page();
+//        $res=$this->where($where)->order('id desc')->limit($page->firstRow.','.$page->listRows)->select();
 //        echo $this->_sql();
+        if($limit ){
+            $res=$this->limit($start,$limit)->select();
+        }else{
+            $res=$this->select();
+        }
+
         return $res;
     }
     public function get_count(){
