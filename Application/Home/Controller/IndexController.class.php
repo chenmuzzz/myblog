@@ -181,4 +181,50 @@ class IndexController extends HomeController
         sendMail($email, '来自沉木博客的自动回复', $content);
     }
 
+    public function crontab(){
+        file_put_contents('try.txt','hello'.PHP_EOL,FILE_APPEND);
+    }
+
+    public function get_sth(){
+//        header("Content-type:text/html;charset=gb2312");
+        $a=file_get_contents('http://dnf.qq.com/main.shtml');
+        preg_match_all('/<ul class="news-list">.*<\/ul>/sU',$a,$str);
+        //所有的活动列表
+            $all_str=$str[0][2];
+        //按li搜索出其中的 每一条
+        preg_match_all('/<li>.*<\/li>/sU',$all_str,$arr_li);
+        //存放 新活动消息
+        $new_dnf='';
+        $num = 0;
+        foreach($arr_li[0] as $k=>$v){
+            $data=array();
+            preg_match('/\w{1,2}\/\w{2}/U',$v,$time);
+            preg_match('/\/webplat.*\.shtml/',$v,$url);
+//            preg_match('/(?:(blank">)).*(?:(<\/a>))/Us',$v,$data['content']);
+            preg_match('/(?<=(k">)).*(?=(<\/a>))/Us',$v,$content);
+            $data['time'] = $time[0];
+            $data['url']=$url[0];
+            $data['content']= iconv('GB2312', 'UTF-8', $content[0]);
+            //在数据库 搜索此条数据
+//            $data['content'] = '[活动] 心跳邂逅：萝莉、御姐谁才是你的爱？';
+            $where['url']=$data['url'];
+            $res=D('dnf')->get($where);
+            if($res){
+                break;
+            }else{
+                $num++;
+                //拼接推送的 消息字符
+                $new_dnf.=$num.": <a href='http://dnf.qq.com".$data['url']."'>".$data['content']."</a>"."<br>";
+                //加入数据库
+                D('dnf')->add_one($data);
+            }
+        }
+        //推送至邮件
+        if($new_dnf){
+            sendMail('571524655@qq.com', 'dnf新更新活动', $new_dnf);
+        }else{
+            file_put_contents('dnf.txt',date('m-d H:i',time()).'无新推送'.PHP_EOL,FILE_APPEND);
+        }
+    }
+
 }
