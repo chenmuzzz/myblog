@@ -41,7 +41,8 @@ class ArticleModel extends \Think\Model{
         return $page;
     }
     public function max_id(){
-        return $this->Max('id');
+
+        return $this->where(array('display'=>1))->Max('id');
     }
     public function min_id(){
         return $this->Min('id');
