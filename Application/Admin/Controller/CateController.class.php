@@ -28,4 +28,11 @@ class CateController extends AdminController{
             $this->cate();
         }
     }
+    public function del_cate(){
+        $id=I('id');
+        $res=D('cate')->delete_one($id);
+        if($res){
+            echo json_encode('1');
+        }
+    }
 }

@@ -210,7 +210,11 @@ class IndexController extends HomeController
             $where['url']=$data['url'];
             $res=D('dnf')->get($where);
             if($res){
-                break;
+                if($k==0){
+                    continue;
+                }else{
+                    break;
+                }
             }else{
                 $num++;
                 //拼接推送的 消息字符

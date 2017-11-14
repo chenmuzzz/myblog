@@ -54,7 +54,7 @@
                   <td>{$v.cate_name}</td>
                   <td>{$v.alias}</td>
                   <td></td>
-                  <td><a href="javascript:void(0)";>修改</a> <a rel="1">删除</a></td>
+                  <td><a href="javascript:void(0)";>修改</a> <a rel="1" date-id="{$v.id}" class="del_cate">删除</a></td>
                 </tr>
               </foreach>
               </tbody>
@@ -65,3 +65,21 @@
     </div>
   </div>
 </section>
+    <script>
+        $('.del_cate').on('click',function(){
+            _this=$(this);
+            var id=$(this).attr('date-id');
+            $.ajax({
+              type:'GET',
+              url:'index.php/admin/cate/del_cate',
+              data:{'id':id},
+              dataType:'json',
+              success:function(msg){
+                  if(msg == 1){
+                    _this.parents('tr').remove();
+                    alert('删除成功');
+                  }
+              }
+            })
+        })
+    </script>

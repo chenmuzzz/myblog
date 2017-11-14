@@ -11,6 +11,8 @@ class ArticleModel extends \Think\Model{
 //        $page=$this->page();
 //        $res=$this->where($where)->order('id desc')->limit($page->firstRow.','.$page->listRows)->select();
 //        echo $this->_sql();
+        $where['display']=1;
+        $this->where($where);
         if($limit ){
             $res=$this->limit($start,$limit)->select();
         }else{
@@ -20,6 +22,8 @@ class ArticleModel extends \Think\Model{
         return $res;
     }
     public function get_count(){
+        $where['display']=1;
+        $this->where($where);
         return $this->count();
     }
     public function get_one($id){

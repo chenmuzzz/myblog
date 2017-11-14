@@ -36,4 +36,8 @@ class CateModel extends \Think\Model{
         $res=$this->find($id);
         return $res;
     }
+
+    public function delete_one($id){
+        return $this->delete($id);
+    }
 }
