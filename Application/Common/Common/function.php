@@ -121,3 +121,10 @@ function dd($data){
     echo '</pre>';
     die;
 }
+//curl
+function get_wechat_obj(){
+    import('Vendor.Wechat.Wechat');
+    $obj=new \Wechat();
+    return $obj;
+}
+
