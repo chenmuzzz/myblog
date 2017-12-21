@@ -17,7 +17,7 @@ class IndexController extends HomeController
         $ajax = I('ajax');
         $obj = D('article');
 
-        $limit = 3;
+        $limit = 5;
 
         $page = I('page') ? I('page') : 1;
 
@@ -107,16 +107,40 @@ class IndexController extends HomeController
 
     public function life()
     {
-        $res = D('life')->get_all();
+        $keyword=I('keyword');
+        if($keyword){
+            header("Content-type:text/html;charset=utf-8");
+            $s = new \SphinxClient();
+            $s->setServer("127.0.0.1", 9312);
+
+            $s->setMatchMode(SPH_MATCH_ALL);
+            $s->setMaxQueryTime(30);
+            $res = $s->query($keyword,'life'); #[宝马]关键字，[main]数据源source
+            $err = $s->GetLastError();
+            $ress=array_keys($res['matches']);
+            $ids=implode(',',$ress);
+            $where['ids']=$ids;
+        }
+        $page = I('page') ? I('page') : 1;
+        $limit=5;
+        $start = $limit * ($page - 1);
+//        $total=D('life')->get_count();
+        $life_res = D('life')->get_all($where,$limit,$start);
+//dump($res);die;
+        $res=$life_res['res'];
+        $total=$life_res['total'];
         foreach ($res as $k => $v) {
             $res[$k]['time'] = date('m-d H:i', $v['add_time']);
         }
 
-        $page = D('life')->page();
-        $show = $page->show();
+//        $page = D('life')->page();
+//        $show = $page->show();
 
-        $this->assign('page', $show);
+//        $this->assign('page', $show);
+        $this->assign('all_page', ceil($total / $limit));
         $this->assign('res', $res);
+        $this->assign('page', $page);
+
         $this->display();
     }
 

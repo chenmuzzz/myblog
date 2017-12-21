@@ -91,18 +91,6 @@
 
             </div>
 
-            7200+300=7500   -1000  =6500
-
-            11.15   6500
-                    -8000-5500-7000=20000
-
-            12.15  7000*3=21000
-
-            27500
-            3*4000=12000
-
-
-
         </div>
 
 
@@ -110,14 +98,14 @@
             <div id="sidebar">
                 <!--搜索-->
                 <div class="widget">
-                    <form action="http://www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"
+                    <form action="" method="get" accept-charset="utf-8" target="_blank"
                           class="search-form">
-                        <input type="search" name="word" maxlength="20" placeholder="Search" class="search-form-input"/>
-                        <input type="hidden" name="si" value="127.0.0.1/oa"/>
-                        <input name="tn" type="hidden" value="bds"/>
-                        <input name="cl" type="hidden" value="3"/>
-                        <input name="ct" type="hidden" value="2097152"/>
-                        <input name="s" type="hidden" value="on"/>
+                        <input type="text" name="word" maxlength="20" placeholder="Search" class="search-form-input"/>
+                        <!--<input type="hidden" name="si" value="127.0.0.1"/>-->
+                        <!--<input name="tn" type="hidden" value="bds"/>-->
+                        <!--<input name="cl" type="hidden" value="3"/>-->
+                        <!--<input name="ct" type="hidden" value="2097152"/>-->
+                        <!--<input name="s" type="hidden" value="on"/>-->
                     </form>
                 </div>
 
@@ -272,6 +260,17 @@
                 obj.siblings('a').removeClass('current');
             }
         }
+        //搜索
+        $('.search-form-input').blur(function(){
+            var keyword=$(this).val();
+            //判断当前所在的列表
+            var tag_id=$('.current').attr('id');
+            var data_url= $('#'+tag_id).attr('data-url')+"&keyword="+keyword;
+            $('#'+tag_id).attr('data-url',data_url);
+            if (tag_id == 'life'){
+                get_ajax_data($('#'+tag_id),keyword);
+            }
+        })
     </script>
 
 

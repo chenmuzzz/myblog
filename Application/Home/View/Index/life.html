@@ -38,10 +38,47 @@
 
            </div>
         </foreach>
-            {$page}
 
          </if>
        </div>
       </div>
+
+         <nav style="text-align: center">
+             <if condition="$all_page neq 1">
+                 <ul id="pageLimit" style="cursor:pointer;"></ul>
+             </if>
+         </nav>
      </div>
     </div>
+<script>
+    $('#pageLimit').bootstrapPaginator({
+        bootstrapMajorVersion: 3, //版本
+        currentPage: {$page},
+        totalPages: {$all_page},
+        numberOfPages: 5,
+        itemTexts: function (type, page, current) {
+            switch (type) {
+                case "first":
+                    return "首页";
+                case "prev":
+                    return "上一页";
+                case "next":
+                    return "下一页";
+                case "last":
+                    return "末页";
+                case "page":
+                    return page;
+            }
+        },
+        onPageClicked: function (event, originalEvent, type, page) {
+            $.ajax({
+                type: 'POST',
+                url: 'index.php/home/index/life',
+                data: {'page': page, 'ajax': 'ajax'},
+                success: function (msg) {
+                    $('#public_div').html(msg);
+                }
+            })
+        }
+    });
+</script>
