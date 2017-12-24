@@ -127,4 +127,30 @@ function get_wechat_obj(){
     $obj=new \Wechat();
     return $obj;
 }
+function curlRequest($url, $type = 'post', $request_data = '') {
 
+    $header = array(
+        "Content-Type:application/json;charset=UTF-8",
+        "Connection:Keep-Alive",
+        'Accept:application/json',
+    );
+
+    $ch = curl_init();
+    /* cURL settings */
+    curl_setopt($ch, CURLOPT_URL, $url);
+
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    if ($type == 'post') {
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $request_data);
+    }
+    $result = curl_exec($ch);
+    curl_close($ch);
+    return $data = empty($result) ? array() : json_decode($result, true);
+}

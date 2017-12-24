@@ -1,0 +1,126 @@
+
+<style>
+   #my_status>.b_d {width:95%;min-height: 100px;border:1px solid #c1c1c1;font-size: 16px;max-width: 708px;margin: 10px auto;background: #fffff8}
+   /*.b_d img{text-align: left !important;}*/
+    /*#my_status{background: lightgrey  }*/
+    /*.content_container{background: lightgrey}*/
+   .user_icon {
+       float: left;
+       border: 1px solid #DDDDDD;
+       padding: 2px;
+       margin: 0 5px 0 5px;
+       width: 40px;
+       height:40px;
+   }
+   .triangle-isosceles.top {
+       background: -webkit-gradient(linear, 0 0, 0 80%, from(#D3FF93), to(#EFFFD7));
+       background: -moz-linear-gradient(#D3FF93, #EFFFD7);
+       background: -o-linear-gradient(#D3FF93, #EFFFD7);
+       background: linear-gradient(#D3FF93, #EFFFD7);
+       width:80%;
+       margin-top: 5px;
+
+   }
+   .thumbnail {
+       line-height: 1.528571429;
+       /*width: 100%;*/
+   }
+   /* Custom, iPhone Retina */
+   @media only screen and (min-width : 320px) {
+       .chen {width: 560px}
+
+   }
+
+   /* Extra Small Devices, Phones */
+   @media only screen and (min-width : 480px) {
+       .chen {width: 560px}
+
+   }
+
+   /* Small Devices, Tablets */
+   @media only screen and (min-width : 768px) {
+       .chen {width: 560px}
+
+   }
+
+   /* Medium Devices, Desktops */
+   @media only screen and (min-width : 992px) {
+       .chen {width: 560px}
+
+   }
+
+   /* Large Devices, Wide Screens */
+   @media only screen and (min-width : 1200px) {.chen{  width:100%;}
+   }
+</style>
+    <div class="pure-u-1 pure-u-md-3-4">
+      <div class="post">
+                 <div class="thumbnail chen" style="min-height: 300px;border: 1px solid white;overflow-y: scroll;max-height: 600px;">
+                         <div class="caption">
+                             <!--<div class="speech_item">-->
+                                 <!--<img src="_HOME_/picture/default/a.jpg" class="user_icon">-->
+                                 <!--root <br>-->
+                                 <!--2017-12-24 00:17:00-->
+                                 <!--<div style="clear:both;"></div>-->
+                                 <!--<p class="triangle-isosceles top">we<br>-->
+                                 <!--</p>-->
+                             <!--</div>-->
+                         </div>
+                 </div>
+
+              <textarea class="textarea thumbnail" id="textarea"></textarea>
+              <input class="btn btn-default send" value="发表" type="button">
+      </div>
+    </div>
+<script>
+    $(function () {
+        var msg = '<div class="speech_item"> <img src="_HOME_/picture/default/a.jpg" class="user_icon">root <br>2017-12-24 00:17:00 <div style="clear:both;"></div> <p class="triangle-isosceles top">有什么可以帮您吗?<br></p></div>';
+        setTimeout(function () {
+            $('.caption').append(msg);
+        },500)
+
+//        $('.caption').animate({height:'show'},'slow', function () {
+//            $(this).append(msg);
+//        })
+    })
+    $('.send').click(function () {
+        var info= $.trim($('#textarea').val());
+        $('#textarea').val('');
+        if(info==''){
+            return false;
+        }
+        $.ajax({
+            type:'GET',
+            url:'index.php/home/robot/send_msg',
+            data:{'info':info},
+            dataType:'json',
+            success:function(msg){
+                if (msg.code == '100000'){
+                    var msgs='<div class="speech_item"> <img src="_HOME_/picture/default/a.jpg" class="user_icon">root <br>'+msg.time+'<div style="clear:both;"></div> <p class="triangle-isosceles top">'+msg.text+'<br> </p> </div>';
+                }
+                if (msg.code == '200000'){
+                    var msgs='<div class="speech_item"> <img src="_HOME_/picture/default/a.jpg" class="user_icon">root <br>'+msg.time+'<div style="clear:both;"></div> <p class="triangle-isosceles top">'+msg.text+'<br> </p><a href='+msg.img+' target="_blank">点击查看</a> </div>';
+                }
+                if (msg.code == '302000'){
+                    var msgs='<div class="speech_item"> <img src="_HOME_/picture/default/a.jpg" class="user_icon">root <br>'+msg.time+'<div style="clear:both;"></div> <p class="triangle-isosceles top">'+msg.text+'<br> </p>';
+                    var list="";
+                    for (var i=0;i<msg.list.length;i++){
+                        list+=(i+1)+":<a href="+msg.list[i].detailurl+" target='_blank'>"+msg.list[i].article+"</a><br>";
+                    }
+                    msgs+=list+"</div>";
+                }
+                if (msg.code == '308000'){
+                    var msgs='<div class="speech_item"> <img src="_HOME_/picture/default/a.jpg" class="user_icon">root <br>'+msg.time+'<div style="clear:both;"></div> <p class="triangle-isosceles top">'+msg.text+'<br> </p>';
+                    var list="";
+                    for (var i=0;i<msg.list.length;i++){
+                        list+="<a href="+msg.list[i].detailurl+" target='_blank'><div>"+(i+1)+":"+msg.list[i].name+"&nbsp;"+msg.list[i].info+"</div><img src="+msg.list[i].icon+"></a><br>";
+                    }
+                    msgs+=list+"</div>";
+                }
+                $('.caption').find('.speech_item').last().append(msgs);
+                $('.chen').prop('scrollTop',$('.chen').prop('scrollHeight'));
+            }
+        })
+    })
+
+</script>

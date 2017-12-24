@@ -120,9 +120,15 @@ class IndexController extends HomeController
             $ress=array_keys($res['matches']);
             $ids=implode(',',$ress);
             $where['ids']=$ids;
+            if($ids==''){
+                $this->assign('res', '');
+                $this->display();
+                exit;
+            }
         }
+
         $page = I('page') ? I('page') : 1;
-        $limit=5;
+        $limit=8;
         $start = $limit * ($page - 1);
 //        $total=D('life')->get_count();
         $life_res = D('life')->get_all($where,$limit,$start);
@@ -209,6 +215,8 @@ class IndexController extends HomeController
         file_put_contents('try.txt','hello'.PHP_EOL,FILE_APPEND);
     }
 
+
+//获取dnf官网的活动推送
     public function get_sth(){
 //        header("Content-type:text/html;charset=gb2312");
         $a=file_get_contents('http://dnf.qq.com/main.shtml');
@@ -254,5 +262,8 @@ class IndexController extends HomeController
             file_put_contents('dnf.txt',date('m-d H:i',time()).'无新推送'.PHP_EOL,FILE_APPEND);
         }
     }
-
+//机器人聊天页面
+    public function robot(){
+        $this->display();
+    }
 }

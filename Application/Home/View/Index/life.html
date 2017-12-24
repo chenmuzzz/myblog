@@ -17,6 +17,14 @@
                    <!--你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好-->
                <!--</div>-->
            <!--</div>-->
+        <if condition="$res eq false">
+
+
+
+            <div style="color:red;font-size: 22px">哇哦,here is nothing</div>
+            <img src="_HOME_/picture/default/a.jpg">
+        <else/>
+
 
         <foreach name="res"  key="k" item="v">
             <if condition="$k eq 0 or $v.year neq $res[$k-1]['year']">
