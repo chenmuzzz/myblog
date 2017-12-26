@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>face</title>
+    <style>
+        body {
+            background: #dddddd;
+        }
+
+        #canvas1 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            margin: 20px;
+            background: #ffffff;
+            border: thin solid #aaaaaa;
+        }
+
+        #canvas2 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            margin: 20px;
+            border: thin solid #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+</body>
+</html>
+<script type="text/javascript" src="_HOME_/about/jquery.min.js"></script>
+<script>
+    can1=$('#canvas1');
+    can2=$('#canvas2');
+    //jquery 这里加0 转为dom对象
+    var zxf1 = $('#canvas1')[0].getContext('2d');
+    var zxf2 = $('#canvas2')[0].getContext('2d');
+
+    var imageObj=new Image();
+    imageObj.src="http://101.132.186.27/Public/Home/picture/images/pic16.jpg";
+    can1.attr('width',imageObj.width);
+    can1.attr('height',imageObj.height);
+    can2.attr('width',imageObj.width);
+    can2.attr('height',imageObj.height);
+    imageObj.onload= function () {
+        zxf1.drawImage(this, 0, 0);//this即是imgObj,保持图片的原始大小：470*480
+    }
+    //这是识别后的json数组
+    var res={$res};
+    console.log(res);
+    //绘制矩形
+    var rect=res.faces[0].face_rectangle;
+//    var pitch = res.faces[0].attributes.headpose.pitch_angle;//抬头
+//    var roll = res.faces[0].attributes.headpose.roll_angle;//旋转
+    var yaw = res.faces[0].attributes.headpose.yaw_angle;//摇头
+//    console.log(pitch);
+//    console.log(roll);
+//    console.log(yaw);
+    zxf2.strokeStyle="#FF0000";
+    zxf2.lineWidth='3';
+    zxf2.strokeRect(rect.left,rect.top,rect.width,rect.height);
+    var imgObj=new Image();
+    imgObj.src="http://101.132.186.27/Public/Home/picture/images/ssd.jpg";   //400 * 441
+    if (yaw>50){
+        var x = rect.width*0.3;
+    }
+    if (yaw < -50){
+        var x = -rect.width*0.3;
+    }
+    if (yaw>=-50 && yaw <=50){
+        var x=1;
+    }
+//    console.log(rect.width-x);
+//    console.log(x);
+    imgObj.onload= function () {
+        zxf2.drawImage(this, rect.left+x, rect.top-rect.height*0.8,rect.width*1.2,rect.height*1.2);//this即是imgObj,保持图片的原始大小：470*480
+    }
+</script>
