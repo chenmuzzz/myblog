@@ -38,9 +38,8 @@
     //jquery 这里加0 转为dom对象
     var zxf1 = $('#canvas1')[0].getContext('2d');
     var zxf2 = $('#canvas2')[0].getContext('2d');
-
     var imageObj=new Image();
-    imageObj.src="http://101.132.186.27/Public/Home/picture/images/pic16.jpg";
+    imageObj.src="http://101.132.186.27/Public/Home/picture/images/t1.jpg";
     can1.attr('width',imageObj.width);
     can1.attr('height',imageObj.height);
     can2.attr('width',imageObj.width);
@@ -50,15 +49,22 @@
     }
     //这是识别后的json数组
     var res={$res};
-    console.log(res);
     //绘制矩形
     var rect=res.faces[0].face_rectangle;
-//    var pitch = res.faces[0].attributes.headpose.pitch_angle;//抬头
+    var pitch = res.faces[0].attributes.headpose.pitch_angle*Math.PI/180;//抬头
 //    var roll = res.faces[0].attributes.headpose.roll_angle;//旋转
     var yaw = res.faces[0].attributes.headpose.yaw_angle;//摇头
 //    console.log(pitch);
 //    console.log(roll);
 //    console.log(yaw);
+
+    //抬头修正系数
+    if (pitch<0){
+        var pitch_x = rect.height*0.7-1.5*rect.height*(1-Math.cos(pitch));  //抬头
+    }else{
+        var pitch_x = rect.height*0.7+1.5*rect.height*(Math.cos(pitch)+Math.sin(pitch)-1); //低头
+    }
+//    alert(pitch_x/rect.height);
     zxf2.strokeStyle="#FF0000";
     zxf2.lineWidth='3';
     zxf2.strokeRect(rect.left,rect.top,rect.width,rect.height);
@@ -73,9 +79,7 @@
     if (yaw>=-50 && yaw <=50){
         var x=1;
     }
-//    console.log(rect.width-x);
-//    console.log(x);
     imgObj.onload= function () {
-        zxf2.drawImage(this, rect.left+x, rect.top-rect.height*0.8,rect.width*1.2,rect.height*1.2);//this即是imgObj,保持图片的原始大小：470*480
+        zxf2.drawImage(this, rect.left+x, rect.top-pitch_x,rect.width*1.2,rect.height*1.2);//this即是imgObj,保持图片的原始大小：470*480
     }
 </script>

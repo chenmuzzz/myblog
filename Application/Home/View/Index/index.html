@@ -35,6 +35,20 @@
         .pure-u-md-3-4 {
             width: 100%
         }
+        #footer a{
+            text-decoration:none;
+            color:grey;
+        }
+        #footer{
+            padding-bottom: 5px;
+        }
+        /*.body_container{*/
+            /*border:1px solid green;*/
+        /*}*/
+        .ICP{
+            position: fixed;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -53,7 +67,7 @@
             <a href="javascript:void(0);" data-url="{:U('index/life')}" id="life"><i class="fa fa-lightbulb-o"> 想法 </i></a>
             <a href="javascript:void(0);" data-url="{:U('index/about')}" id="about"><i class="fa fa-calendar-o"> 关于</i></a>
             <a href="javascript:void(0);" data-url="{:U('index/contact')}" id="contact"><i class="fa fa-user"> 联系我 </i></a>
-            <a href="javascript:void(0);" data-url="{:U('index/robot')}" id="robot"><i class="fa fa-battery-full"> 在线解惑 </i></a>
+            <!--<a href="javascript:void(0);" data-url="{:U('index/robot')}" id="robot"><i class="fa fa-battery-full"> 在线解惑 </i></a>-->
 
         </div>
     </div>
@@ -157,20 +171,29 @@
     </div>
 
 
-    <div id="footer">
-        &copy;
-        <a href="##" rel="nofollow">沉木.</a> Powered by
-        <a rel="nofollow" target="_blank" href="javascript:void(0);"> Zxf.</a>
-        <!--a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme-->
-        <!--|  by-->
-        <!--a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.-->
+    <div id="footer" class="ICP">
+            &copy;
+            <a href="javascript:void(0);" rel="nofollow">沉木.</a> Powered by
+            <a rel="nofollow" href="javascript:void(0);"> Zxf.</a> | <a href="javascript:void(0);">苏ICP备17077558号</a>
     </div>
-    <a id="rocket" href="127.0.0.1/0a#top" class="show"></a>
+
+    <a id="rocket" href="127.0.0.1#top" class="show"></a>
     <script type="text/javascript" src="_HOME_/about/jquery.min.js"></script>
     <script type="text/javascript" src="_HOME_/about/totop.js"></script>
     <script type="text/javascript" src="_HOME_/about/bootstrap-paginator.js"></script>
     <script>
 
+        $(function(){
+            ICP();
+        })
+        //用于自适应备案信息的位置
+        function ICP(){
+            if ($('.body_container').height() < $(window).height()) {
+                $('#footer').addClass('ICP');
+            }else{
+                $('#footer').removeClass('ICP');
+            }
+        }
         //        $(function(){
         //            if(document.URL.indexOf('a=index')>0){
         //                $('#index').addClass('current');
@@ -252,6 +275,7 @@
                 data: {'ajax': 'ajax'},
                 success: function (msg) {
                     $('#public_div').html(msg);
+                    ICP();
                 }
             })
         }
