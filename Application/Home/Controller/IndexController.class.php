@@ -220,7 +220,7 @@ class IndexController extends HomeController
     public function get_sth(){
 //        header("Content-type:text/html;charset=gb2312");
         $a=file_get_contents('http://dnf.qq.com/main.shtml');
-        preg_match_all('/<ul class="news-list">.*<\/ul>/sU',$a,$str);
+	preg_match_all('/<ul class="news-list">.*<\/ul>/sU',$a,$str);
         //所有的活动列表
             $all_str=$str[0][2];
         //按li搜索出其中的 每一条
