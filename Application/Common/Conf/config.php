@@ -4,6 +4,7 @@ return array(
 	'TMPL_PARSE_STRING'=>array(
 			'_HOME_'=>__ROOT__.'/Public/Home',
 			'_ADMIN_'=>__ROOT__.'/Public/Admin',
+			'_COMMON_'=>__ROOT__.'/Public/Common',
 		),
 	'DATA_CACHE_PREFIX' => 'Redis_',//缓存前缀
 	'DATA_CACHE_TYPE'=>'Redis',//默认动态缓存为Redis

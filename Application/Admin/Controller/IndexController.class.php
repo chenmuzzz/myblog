@@ -44,13 +44,25 @@ class IndexController extends AdminController {
         $this->assign('info',$info);
         $this->display('index');
     }
-    public function a(){
-//        dump(UPLOAD);die;
-    $res = file_get_contents('https://www.yezismile.com/');
-    file_put_contents(UPLOAD.'index.html',$res);
-    echo $res;
-    }
+
     public function index1(){
         $this->display('index');
+    }
+
+    //执行登陆
+    public function login_do(){
+        $user_name=I('user_name');
+        $password=I('password');
+        if($user_name == 'zxf' && $password=='571524655cm'){
+            $_SESSION['USER_NAME'] = 'zxf';
+            $this->success('登陆成功',U('index'));
+        }else{
+            $this->error('登陆失败');
+        }
+    }
+    //退出登陆
+    public function logout(){
+        unset($_SESSION['USER_NAME']);
+        $this->success('退出登陆成功',"/");
     }
 }

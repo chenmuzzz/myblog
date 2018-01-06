@@ -116,4 +116,19 @@ class TestController extends HomeController
             $this->drawLeaf($g, $x1R, $y1R, $L / $s2, $a + $B);
         }
     }
+    function download(){
+
+        $filename="http://zxf.ink/Public/Home/picture/images/pic1.jpg";
+        $file  =  fopen($filename, "rb");
+        Header( "Content-type:  application/octet-stream ");
+        Header( "Accept-Ranges:  bytes ");
+        Header( "Content-Disposition:  attachment;  filename= 1.jpg");
+        $contents = "";
+        while (!feof($file)) {
+            $contents .= fread($file, 8192);
+        }
+        echo $contents;
+        fclose($file);
+
+    }
 }
