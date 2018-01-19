@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="_COMMON_/layui/css/layui.css"  media="all">
+
+
+<div class="pure-u-1 pure-u-md-3-4">
+    <div class="content_container">
+        <div class="post">
+            <div class="post-archive" id="list_article">
+
+                <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+
+                <div class="layui-carousel" id="test1" style="min-width: 320px;">
+                    <div carousel-item>
+                        <img src="_HOME_/picture/images/pic1.jpg">
+                        <img src="_HOME_/picture/images/pic2.jpg">
+                        <img src="_HOME_/picture/images/pic3.jpg">
+                        <img src="_HOME_/picture/images/pic4.jpg">
+                        <img src="_HOME_/picture/images/pic5.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="_COMMON_/layui/layui.all.js" charset="utf-8"></script>
+
+<script>
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            ,width: '100%' //设置容器宽度
+            ,arrow: 'none' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
+
+
+
+

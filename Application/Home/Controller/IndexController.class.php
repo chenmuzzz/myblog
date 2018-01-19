@@ -14,6 +14,9 @@ class IndexController extends HomeController
 
     public function index()
     {
+        //判断访问量
+        $this->page_view();
+
         $ajax = I('ajax');
         $obj = D('article');
 
@@ -40,6 +43,19 @@ class IndexController extends HomeController
             $this->display('index');
         }
 
+    }
+    //统计访问量
+    private function page_view(){
+        $ip = get_real_ip();
+        $_COOKIE['test'] = 1;
+        if($_COOKIE['visitor_ip'] == $ip || !$_COOKIE['test']){
+            unset($_COOKIE['test']);
+        }else{
+            setcookie("visitor_ip",$ip,time()+7200);
+            $redis = new \Redis();
+            $redis->connect('127.0.0.1','6379');
+            $redis->incr("page_view");
+        }
     }
 
     public function new_article()
@@ -149,7 +165,10 @@ class IndexController extends HomeController
 
         $this->display();
     }
-
+    //想册
+    public function pic(){
+        $this->display();
+    }
     public function article_list()
     {
         $ajax = I('ajax');

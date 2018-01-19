@@ -70,4 +70,8 @@ class MyController extends HomeController
         }
         return $max;
     }
+    function test1(){
+        $ip = get_real_ip();
+        dd($ip);
+    }
 }
